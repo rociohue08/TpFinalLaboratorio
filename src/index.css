@@ -1,0 +1,37 @@
+.app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    height: 100%;
+  }
+  
+  header {
+    background: #333; 
+    color: #fff;     
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  nav {
+    background: #444; 
+    color: #fff;     
+    padding: 1rem;
+  }
+  
+  aside {
+    background: #eee; 
+    padding: 1rem;
+    width: 200px;    
+  }
+  
+  main {
+    flex: 1;       
+    padding: 1rem;
+  }
+  
+  footer {
+    background: #333;
+    color: #fff; 
+    text-align: center;
+    padding: 1rem;
+  }

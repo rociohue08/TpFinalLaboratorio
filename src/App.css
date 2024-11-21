@@ -1,0 +1,55 @@
+
+/*todo lo que se ve en la pantalla esta en el index.html por eso aca llamo al id root 
+y le doy las medidas por defecto venia todo centrado y no podia darle un ancho a mi pagina*/
+
+
+#root {
+  width: 100%;
+  max-width: 1200px;/*1280px // Pero no se expandirá más allá de 1200px */
+  margin: 0 auto;/* Centra el contenedor horizontalmente */
+  padding: 2rem;
+  text-align: center;
+}
+
+.app-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas: 
+    "header header"
+    "nav main"
+    "aside footer";
+}
+
+@media (max-width: 768px) {
+  .app-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 1fr auto auto;
+    grid-template-areas: 
+      "header"
+      "nav"
+      "main"
+      "aside"
+      "footer";
+  }
+}
+
+header {
+  grid-area: header;
+}
+
+nav {
+  grid-area: nav;
+}
+
+aside {
+  grid-area: aside;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+}
